@@ -134,19 +134,24 @@ Many devices emit RFI, but microwaves are the most noticeable in my opinion
 
 A screwdriver - number 2 Phillips (I like the type that can take several different driver bits)
 
+ESD strap
+
 Basic tech toolkit
 
 * Screwdriver
 * Variety of driver bits
-* Hemostat
-* Tweezers
+* Hemostat, tweezers, or small magnet for grabbing dropped parts
 
 More specialized toolkits (eg for mobile devices)
 
 * Spudgers (prying tools)
 * Suction cups
 
-Troubleshooting Methodology
+USB Drives - Various Diagnosis Tools and OS install disks
+
+Multimeter for checking electrical circuits (maybe)
+
+# Troubleshooting Methodology
 
 1. Identify the problem - ask about recent changes, review logs
 2. Establish a theory - If necessary conduct research based on symptoms
@@ -162,12 +167,4 @@ When trying to determine a problem, investigate the simple things first. Be sure
 It can be a challenge to test a theory, because the test and the fix may be the same. Can you easily revert the change if it doesn't fix anything?
 
 A plan of action may involve more than just fixing the problem - should you create a full backup first?
-
-For this class:
-Thermal compound
-ESD wrist straps
-Screwdriver
-
-Specialized tool kit
-USB drives
 

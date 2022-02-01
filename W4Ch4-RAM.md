@@ -1,5 +1,7 @@
 # RAM
 
+Considered to be a FRU (Field Replaceable Unit)
+
 Random Access Memory - Any part of the memory can be accessed at any time
 
 Each byte has an address, and consists of 8 bits (with each bit a 1 or 0)

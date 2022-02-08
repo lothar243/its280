@@ -6,6 +6,7 @@ Random Access Memory - Any part of the memory can be accessed at any time
 
 Each byte has an address, and consists of 8 bits (with each bit a 1 or 0)
 
+* 32-bit vs 64-bit memory address
 * Dynamic random access memory (DRAM). Capacitors serve as storage, but needs to be periodically refreshed
 * Note: static RAM (SRAM) is typically used for cache memory in the CPU. Needs constant flow of power
 

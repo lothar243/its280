@@ -101,8 +101,8 @@ Vocabulary
 
   Several different connections (https://components101.com/connectors/dvi-connector)
 
-  * DVI-A - Analog, compatible with VGA
-  * DVI-D - Digital, compatible with HDMI
+  * DVI-A - Analog
+  * DVI-D - Digital
   * DVI-I - Integrated
     * Single Link
     * Dual Link - Double the throughput

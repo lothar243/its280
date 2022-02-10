@@ -10,6 +10,28 @@ Each byte has an address, and consists of 8 bits (with each bit a 1 or 0)
 * Dynamic random access memory (DRAM). Capacitors serve as storage, but needs to be periodically refreshed
 * Note: static RAM (SRAM) is typically used for cache memory in the CPU. Needs constant flow of power
 
+## Units of information
+
+A quick note: b is used to represent bits, B is used for bytes, so 1Gbps is 1 gigibit per second, 1 GBps would be 8 times as fast
+
+How much memory can be addressed by 10 bits? 20 bits? 30 bits?
+
+1024 is approximately 1000, so this was traditionally called a kilobyte
+
+* This doesn't agree with the metric system, which is base 10
+
+* 1km = 1000m exactly
+
+Enter kibibytes (KiB), mebibytes (MiB), gibibytes (GiB)
+
+* 1 KiB = 1.024 KB = 2^10 bytes
+* 1 MiB = 2^20 bytes
+* etc
+
+Convert 1 TiB to TB
+
+Convert 1 TB to TiB
+
 ## Memory Controller
 
 * Traditionally located in the northbridge

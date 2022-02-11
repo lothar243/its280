@@ -8,7 +8,7 @@
 
   * Can be damaged by vibration/shock (not a good choice for laptops)
 
-  ![harddrive](/home/jeff/Documents/Lectures/its280/images/harddrive.webp)
+  ![harddrive](images/harddrive.webp)
 
 * Actuator arm moves a read/write head (this is the source of the clicking noise)
 
@@ -34,7 +34,7 @@ Form Factors
 * 2.5-inch
 * mSATA
 * M2 drives
-* ![m2ssd](/home/jeff/Documents/Lectures/its280/images/m2ssd.jpg)
+* ![m2ssd](images/m2ssd.jpg)
 * 
 * NVME
 * SATA 2.5

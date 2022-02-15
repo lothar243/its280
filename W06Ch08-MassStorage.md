@@ -86,40 +86,107 @@ Hybrid Hard Drives (HHDs)
 * Serial ATA (SATA)
 
   * Fewer wires, longer maximum wire length
+  * Direct connection between mass storage device and SATA controller, called the Host Bus Adapter (HBA)
   * One drive per port
   * Faster than PATA - 1.5Gbps, 3Gbps, and 6Gpbs varieties
-* SATA 2.5
-* Magnetic hard drives (and their RPM)
-* sizes (2.5, 3.5)
-* hybrid drives
-* flash (ch 10)
-  * sd card
-  * compactflash
-  * micro-sd
-  * mini-sd
-  * xD
+* SATAe
 
-RAID types (ch 8)
+  * SATA express - direct connection to PCIe lane (recall that PCIe can move 16 Gbps (2 GBps)
 
-Hot swappable(ch 8)
+* eSata
 
-# Hard drive cables
+  * External SATA - make use of the fact that SATA is hot-swappable
+  * Not as popular since USB 3.0
 
-SATA
+* SCSI
 
-SCSI
+  * Chain up to 16 devices together
+  * Used to need a terminator, but now is automatically configured
+  * Each device uses a unique SCSI ID
 
-SCSI
+    * 0 - 15
+    * Logical units (LUNs) are defined within a SCSI ID
 
-eSATA
+      * A multi-drive enclosure gets a SCSI ID, and separate drives get a LUN
 
-Molex
+  * Serial attached SCSI (SAS) devices have no jumpers, terminators, or settings
 
-Windows
+    * Point-to-point
+    * More commonly used in servers and drive arrays
 
-* disk management (ch 9)
 
-SSD vs hybrid vs magnetic disk - Ch 23, p890
+Advanced Host Controller Interface (AHCI)
+
+* Needs to be enabled in BIOS
+* An efficient way to work with SATA HBAs
+  * Unlocks Command Queuing and Hot-swapping
+
+## Data Redundancy
+
+* Write the same data to two drives
+  * Mirroring (Both drive connected to same RAID controller)
+  * Duplexing (Two RAID controllers)
+    * Marginally faster than mirroring (and safer)
+* Disk striping - spread data across multiple drives to speed up read/write
+  * Risky
+* Disk striping with parity - Parity stripe stored so if one drive fails, data can be recovered
+  * At least 3 drives, commonly more
+
+Redundant Array of Inexpensive Disks (RAID)
+
+* RAID 0 - Disk Striping. Requires at least two drives (not redundant)
+* RAID 1 - Disk Mirroring/Duplexing. Requires at least two drives
+* RAID 5 - Disk Striping with Distributed Parity. Requires at least three drives
+* RAID 6 - Disk Striping with Extra Parity. Requires at least 4 drives
+* RAID 10 (or 1+0) - Nested, Striped Mirrors. Requires at least 4 drives
+  * Mirror then stripe
+  * Speed of striping with reliability of mirroring (4x read, 2x write)
+  * RAID 0
+    * RAID 1
+      * Drive 1
+        * B1
+        * B3
+        * B5
+      * Drive 2
+        * B1
+        * B3
+        * B5
+    * RAID 1
+      * Drive 3
+        * B2
+        * B4
+        * B6
+      * Drive 4
+        * B2
+        * B4
+        * B6
+* RAID 0+1 - Nested, Mirror Stripes
+  * Start with stripes and create mirrors
+  * Performance: Read x4, write x2
+  * RAID 1
+    * RAID 0
+      * Drive 1
+        * B1
+        * B3
+        * B5
+      * Drive 2
+        * B2
+        * B4
+        * B6
+    * RAID 0
+      * Drive 3
+        * C1
+        * C3
+        * C5
+      * Drive 4
+        * C2
+        * C4
+        * C6
+* Hardware vs Software RAIDS
+  * Windows allows Software RAIDS in Disk Management, and Storage Spaces
+  * ZFS
+  * Unraid
+  * TrueNAS
 
 # Mass Storage Maintenance and End-of-life
 

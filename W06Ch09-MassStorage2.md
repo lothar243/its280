@@ -106,7 +106,7 @@ Linux
   * More commonly Apple File System (APFS)
 * Linux
   * Ext4 (Fourth Extended File System)
-    * Supports partitionls of 1 EB, with files of 16 TB
+    * Supports partitions of 1 EB, with files of 16 TB
     * Backwards compatible with ext2 and ext3
 
   * ZFS

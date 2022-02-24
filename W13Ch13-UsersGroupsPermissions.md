@@ -146,3 +146,7 @@ change permissions
 # Protecting data with encryption
 
 Encrypting File System (EFS) - feature of Windows professional
+
+
+
+-- this is not done yet-- revist

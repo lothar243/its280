@@ -9,6 +9,8 @@ Client - a computer that initiates a request
 Types of servers
 
 * Web server
+  * nginx, Apache, Microsoft IIS, just to name a few
+
 * Print server
 * File server
 
@@ -52,6 +54,10 @@ LAN - Local area network
 
 * Typically within a few hundred meters
 * One broadcast domain
+  * Frames sent as a broadcast get passed on to all devices in the broadcast domain
+
+The total amount of traffic the network can handle is called its bandwidth
+
 
 #### Network infrastructure
 
@@ -105,12 +111,13 @@ Bridge
 * RJ-45 Connectors - T568A and T568B
 
   * Alternate stripe/solid
-
   * Blue and brown are in the same spots __ __ __ B BW __ Br BrW
-
   * The green and orange order is dependent on A (alphabetical) or B (backward)
-
   * GW G BW __ __ B __ __    vs    BW B GW __ __ G __ __
+  * Cables with the same connection on both ends are called patch cables
+    * Used to connect your NIC to a switch
+  * Cables with T568A on one end and T568B on the other are crossover cables
+    * Used to allow two similar devices (like two NICs) to talk directly, without a switch
 
 
 ### Fiber Optic

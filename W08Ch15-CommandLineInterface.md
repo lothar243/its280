@@ -53,13 +53,15 @@ Commands executed in a command-line interface are very sensitive to syntax
 * Not case sensitive
 * Powershell "commmandlets" are of the form verb-noun, such as Get-ChildItem
 
-## Piping
+## CLI General Tips
 
-Take the output of one command and give it to another command as input (works on Linux and Powershell)
+Piping - Take the output of one command and give it to another command as input (works on Bash and Powershell)
 
 * ls /usr/bin | less
 
 Tab completion - both Windows and Linux, pressing tab will cause the shell to attempt to predict and complete the command
+
+Press the Up/down arrows to pull up previous commands, move cursor with left/right
 
 ## Commands
 
@@ -107,6 +109,8 @@ Switches/Options often come in short and long varieties
 * Shortened versions usually have one dash and can frequently be combined
   * ls -lah
 
+Elevate privileges - su/sudo
+
 ### Windows
 
 List files and subfolders - dir
@@ -145,6 +149,11 @@ Help
 * Individual programs - dir /?
 * Powershell specific - get-help get-childitem
 
+Elevate privileges - look for "Administrator" in the title bar
+
+* When opening, right click and "Run as administrator"
+* If using the run dialog, hold ctrl and shift when pressing 'OK'
+
 ### Additional Windows Commands
 
 chkdsk - scans, detects, and repairs file system issues and errors
@@ -164,6 +173,17 @@ sfc - (System File Checker) scans, detects, and restores important Windows syste
 
 shutdown - shutdown local or remote computer
 
+net
+
+* view - see connected resources
+* share - manage shared network resources
+* use - use shared resources
+* users - view users
+* user - manage user accounts
+  * net user bob * /add (if you type in asterisk it will prompt you for password)
+* localgroup - manage local groups
+  * net localgroup administrators bob /delete
+
 ### Additional Linux Commands
 
 ifconfig - Show information about or configure network interfaces
@@ -182,8 +202,6 @@ grep - filter text
 ps - show processes
 
 * Typically we would use the aux options to show all processes, regardless of the user or the mode it's run in
-
-sudo/su - used to elevate privileges
 
 apt-get/apt - used to install packages
 
@@ -208,6 +226,37 @@ shutdown <options> <time> - shut down the system
 * shutdown -r now - reboot now
 
 passwd - change password
+
+# Pros/Cons of the Command-Line Interface (vs GUI)
+
+### Disadvantages 
+
+* Takes longer to learn/more difficult to get started
+* Not as user-friendly
+
+### Advantages
+
+Doesn't change as often
+
+* GUI changes happen constantly - keeping track of multiple versions of Windows/Linux is a losing battle
+* wmic will be disabled by default soon, but changes are very slow
+* GUI tends to be less stable for me (more crashing)
+
+Can easily be run remotely - remotely administer computers (even while they're in use)
+
+* Powershell makes administering a command to many computer simultaneously possible
+
+More customizable
+
+Bash and Powershell are Modular
+
+* You don't have to rely on the GUI being created specifically for the thing you want
+* Pipe output between utilities to do just what you want
+
+It is scriptable
+
+* Allows consistency between multiple devices/employees/times
+* Enables automation
 
 ## Scripting
 

@@ -62,6 +62,7 @@ Transmitting over the same medium
 Ad Hoc Mode, sometimes called peer-to-peer mode
 
 * Hosts connect directly with one another without any central coordinator
+* Don't need a WAP
 
 Infrastructure Mode
 
@@ -115,6 +116,56 @@ Generations of wireless security: WEP, WPA, WPA2, and WPA3
 ### Wi-Fi Protected Setup (WPS)
 
 * Connect devices by pressing a button on the WAP and connecting within a timeframe
-* 8 digits code is very weak
-  * Split into two parts, 4/4, and one of those is used as an error check, so only 10^4 + 10^3 = 11,000 tries would be needed to break in (at most)
+* Alternatively enter a 8 digits code
+  * Split into two parts, 4/4, and one of those is used as an error check, so at most 10^4 + 10^3 = 11,000 tries would be needed to break in (very weak)
 
+## 802.11-Based Wireless networking
+
+802.11b/a/g/n/ac/ax - You will look at the differences in your assignment
+
+* n, ac and ax are also called wifi 4, 5, and 6, respectively
+
+The two major frequencies used: 2.4Ghz and 5Ghz (not to be confused with cellular's 5G)
+
+2.4 Ghz is broken into 11 channels (1-11 in the US), but really only 3 should be used
+
+![wifichannels](images/wifichannels.png)
+
+
+
+* WAPs should be arranged so that there isn't interference (multiple WAPs in range with overlapping channels) - https://www.extremenetworks.com/extreme-networks-blog/2-4-ghz-channel-planning/
+* Lower frequency signals are better at penetrating walls
+
+5 Ghz 
+
+* Has either 12 or 6 non-overlapping channels possible (depending on if the channels are 40 Mhz or 80 Mhz)
+
+* Tends to be shorter range, with less ability to penetrate walls
+
+Vocabulary
+
+* Multiple in/Multiple out (MIMO) - Ability to have multiple simultaneous connections
+  * Requires multiple antennas on non-hand-held devices (up to 4)
+* Transmission beamforming - use multiple antennas and constructive interference to target a device (rather than sending the same data in all directions)
+
+![double-slit-experiment](images/double-slit-experiment.jpeg)
+
+* Multi-user MIMO (MU-MIMO) - Connect with multiple users simultaneously
+* Orthogonal Frequency Division Multiple Access (OFDMA) - Subdivide a channel into subcarriers, allowing for more simultaneous devices connections (while splitting the total bandwidth)
+
+# Other wireless standards
+
+## Infrared
+
+Infrared Data Association (IrDA) - transmit via infrared light
+
+* Short range (1m)
+* Not very impressive speeds (4Mbps)
+* Vulnerable to interference (sunlight, or a cold beverage)
+
+Bluetooth - your own Personal Area Network (PAN)
+
+* Acceptable speeds for file transfers
+* In the 2.4 GHz range
+
+Cellular

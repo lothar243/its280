@@ -185,6 +185,12 @@ Switches
 * Managed
   * Has the ability to be configured (usually through a web interface)
 
+Power over Ethernet (PoE)
+
+* Ability to power your device and send data over the same ethernet cable
+* The device must be capable of accepting the power, and it must be injected either by a standalone device or by the switch itself
+* Handy for devices like security cameras
+
 ### Network Shares
 
 * Resources that are made available over the network (Folders or printers, for example)

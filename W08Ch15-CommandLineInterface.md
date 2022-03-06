@@ -3,7 +3,7 @@
 ## Shells
 
 * Linux Terminal Emulator
-  * Born-Again SHell (bash)
+  * Bourne-Again SHell (bash)
 * Windows Command Prompt (cmd)
   * Successor of the DOS Prompt
 * Windows Powershell (powershell)

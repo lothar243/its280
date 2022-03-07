@@ -63,6 +63,10 @@ Tab completion - both Windows and Linux, pressing tab will cause the shell to at
 
 Press the Up/down arrows to pull up previous commands, move cursor with left/right
 
+The current directory is represented by .		cp Downloads\myfile.txt .
+
+The parent of your current directory is ..		cd ..
+
 ## Commands
 
 ### Linux - basic

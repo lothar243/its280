@@ -26,6 +26,7 @@ Internet Service Provider (ISP) - Lease connections from Tier 1 and Tier 2 for t
 
 Integrated Services Digital Network
 
+* Must be close enough to the central office
 * Runs over the pre-existing copper phone lines
 * Two channels: Bearer (B) and Delta (D)
   * Bearer carried voice and data at 64 Kbps
@@ -36,8 +37,8 @@ Integrated Services Digital Network
 
 Digital Subscriber Line
 
+* Must be close enough to the central office
 * Connect to ISP over standard telephone line
-
 * Always-on internet
 * DSL filter must be placed before phones  to get rid of high pitched screech, but there's no need for an additional line
 
@@ -53,6 +54,9 @@ Digital Subscriber Line
 
 * 2G and 3G
   * Global System for Mobile Communications (GSM) or Code division Multiple Access (CDMA) networks
+    * GSM evolved into GPRS and EDGE
+    * CDMA introduced EV-DO
+  * Fragmented technologies made switching carriers difficult
 * 4G LTE (Long Term Evolution)
   * An open interoperable standard used by virtually all carriers
 * 5G

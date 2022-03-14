@@ -97,6 +97,11 @@ SMTP/POP3/IMAP - Email
 
 * SMTP is used for sending email between mail servers
 * POP3 and IMAP are used to retrieve email from your mail server
+* Encryption
+  * Not encrypted by default
+  * Pretty Good Privacy (PGP) or Gnu Privacy Guard (GPG)
+  * Secure/Multipurpose Internet Mail Extensions (S/MIME)
+
 
 File Transfer Protocol - FTP
 

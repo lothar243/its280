@@ -147,6 +147,42 @@ change permissions
 
 Encrypting File System (EFS) - feature of Windows professional
 
+* Any User can encrypt individual files or folders
+  * Right click | Properties | General | Advanced | Encrypt contents
 
+Bitlocker Drive Encryption - Windows professional
 
--- this is not done yet-- revist
+* Encrypt the entire drive
+  * Useful in case of device theft/loss
+* Requires Trusted Platform Module (TPM)
+* Can also be decrypted with a recovery key or recovery password
+
+Bitlocker To Go
+
+* Full-drive encryption of removable drives like USB drives
+
+* Doesn't require TPM
+
+# Security Policies
+
+## Local Security Policy
+
+* Control Panel | Administrative Tools | Local Security Policy (secpol.msc)
+
+* Set policies that affect this computer
+
+## User Account Control (UAC)
+
+* Popup dialog that stops unauthorized changes from taking place
+
+* Reduce need for user to be logged in as administrator
+
+* As of Windows 7, you can select 1 of 4 levels for how aggressive the UAC is
+
+  * Control Panel | User Accounts | Change User Account Control Settings
+
+  * The Top Option - Notify when apps try to change setting or if I make changes
+  * Second position - Notify me when apps try to make changes
+  * Third position - Like the second, but don't dim the desktop
+  * The bottom option - (Never notify) turns off UAC
+

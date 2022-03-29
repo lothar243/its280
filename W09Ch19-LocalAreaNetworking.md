@@ -30,6 +30,7 @@ TCP/IP - Transmission Control Protocol/Internet Protocol
 * LAN - Usually withing a couple-hundred meters
 * MAN - Metropolitan area network - citywide network
 * WAN - Wide area network - usually Hundreds of kilometers
+* SAN - Storage area network - high-speed network that provides block-level access to storage
 
 Routers - redirect traffic based on IP address, they generally have a 'LAN' side and a 'WAN' side
 
@@ -223,7 +224,7 @@ Power over Ethernet (PoE)
 
 ## Homegroups
 
-Workgroups provide almost no security, and domains require too much configuration for the average user
+Middle ground - Workgroups provide almost no security, and domains require too much configuration for the average user
 
 * Introduced in Windows 7
 * Share libraries with a password

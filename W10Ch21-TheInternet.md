@@ -12,7 +12,19 @@ Tiers
 
 Internet Service Provider (ISP) - Lease connections from Tier 1 and Tier 2 for their customers
 
-### Dial-up networking (DUN)
+### DNS (More emphasis in the A+ 1101)
+
+DNS records are identified by type
+
+* A - IPv4 address
+* AAAA - IPv6 address
+* TXT - text
+* MX - Mail exchanger
+  * Sender Policy Framework (SPF) - Prevent spoofing by defining which IP addresses are allowed to send mail for a particular domain
+  * DomainKeys Identified Mail (DKIM) - Provides encryption key and digital signature that verifies the email was not faked or altered
+  * Domain-based Message Authentication, Reporting, and Conformance (DMARC) - Declare what should happen to email that fails SPF or DKIM (Usually marked as spam or bounce)
+
+### Dial-up networking (DUN) (Not in A+ 1101)
 
 * Modems - MOdulate/DEModulate - convert signals from digital to/from analog
   * Used to convert ethernet to something that can travel over cable or phone
@@ -22,7 +34,7 @@ Internet Service Provider (ISP) - Lease connections from Tier 1 and Tier 2 for t
     * Point-to-Point Protocol (PPP) - streaming protocol for dial-up internet
     * Point-to-Point Protocol over Ethernet (PPPoE) - Encapsulate PPP frames inside ethernet. Not to be confused with PoE.
 
-### ISDN
+### ISDN (Not in A+ 1101)
 
 Integrated Services Digital Network
 
@@ -33,6 +45,14 @@ Integrated Services Digital Network
   * Delta carried configuration at 16 Kbps
 * Much faster to form initial connection than traditional modem over analog
 
+### Optical network terminal (ONT)/Fiber
+
+Convert Fiber to Ethernet
+
+* Consumer speeds up to 5Gbps
+* Symmetrical speeds
+* More limited availability
+
 ### DSL
 
 Digital Subscriber Line
@@ -41,14 +61,11 @@ Digital Subscriber Line
 * Connect to ISP over standard telephone line
 * Always-on internet
 * DSL filter must be placed before phones  to get rid of high pitched screech, but there's no need for an additional line
+* Typically asymmetric (faster download speeds than upload) called ADSL
 
 ### Cable
 
 * Uses RG-6 or RG-59 coaxial cable
-
-### Fiber
-
-* Limited availability
 
 ### Cellular
 
@@ -67,6 +84,7 @@ Digital Subscriber Line
 ### Satellite
 
 * Satellite latency - usually unnoticeable for Internet browsing, but not good for gaming or voice
+* More availability with options like Starlink
 
 ## Network Address Translation (NAT)
 

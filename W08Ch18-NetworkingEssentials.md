@@ -123,8 +123,8 @@ Bridge
 ### Fiber Optic
 
 * Connectors
-  * ST - round with bayonet mount
-  * SC - "Square connector", snap-in
+  * ST - "Straight tip", round with bayonet mount
+  * SC - "Square connector", snap-in (Technically subscriber connector)
   * LC - Small form factor
   * Others exist, but not needed for the A+
 * Mode

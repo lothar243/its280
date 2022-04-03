@@ -49,6 +49,8 @@ Two types of thermal printers: Direct thermal and thermal wax transfer
 
 ### Laser Printers
 
+https://www.youtube.com/watch?v=WB0HnXcW8qQ
+
 * Toner cartridge holds a the powder that is used to create images
   * Also often contain parts the parts that tend to wear out or break
 * Imaging Drum

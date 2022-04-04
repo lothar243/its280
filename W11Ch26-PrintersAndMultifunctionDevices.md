@@ -49,8 +49,6 @@ Two types of thermal printers: Direct thermal and thermal wax transfer
 
 ### Laser Printers
 
-https://www.youtube.com/watch?v=WB0HnXcW8qQ
-
 * Toner cartridge holds a the powder that is used to create images
   * Also often contain parts the parts that tend to wear out or break
 * Imaging Drum
@@ -103,7 +101,7 @@ Material
 * Print to PDF
 * Print to XPS - (XML Paper Specification) - Essentially a Microsoft specific version of PDF
 * Print to Image - create BMP, GIF, etc file
-* Clout and Remote Printing - printer is accessed via the cloud
+* Cloud and Remote Printing - printer is accessed via the cloud
 
 ### Printer Languages
 
@@ -112,7 +110,7 @@ Material
 * HP Printer Command Language (PCL) - more advanced than ASCII but still character-based
 * Windows GDI and XPS
   * Graphical device interface (GDI) - processing is done by CPU (rather than printer) - raster image
-  * XPSj
+  * XPS
 
 ## Scanners
 
@@ -141,23 +139,35 @@ A multifunction device (MFD)
 
 # Laser Printing Process
 
+https://www.youtube.com/watch?v=WB0HnXcW8qQ
+
 1. Processing
+
    * Job is sent to print spooler in Windows, allowing job queueing
    * Job is sent from print spooler to printer
      * Raster Image Processor (RIP) converts raster image to pattern for laser
    * Resolution Enhancement Technology (RET) - Insert smaller dots among characters to smooth out appearance
+
 2. Charging
    * The primary corona wire or primary charge wire distribute a uniform negative charge to the imaging drum
+
 3. Exposing
    * A laser is used to create a positive image on the surface of the drum
+
 4. Developing
    * Toner is attracted to drum with relatively positive charge
+
 5. Transferring
-   * Toner moves from imaging drum to paper, but just resting in place
-6. Fusing
-   * Two rollers - a heated roller coated in a nonstick material and a pressure roller melt the toner to the page
-7. Cleaning
+   * Toner moves from imaging drum to paper, but still is powder
+
+6. Cleaning
+
    * Erase lamps remove remaining charge from imaging drum and a cleaning blade scrapes toner from the drum
+
+   If this is a color printer, parts 2-6 are repeated for CMYK (Cyan, Magenta, Yellow, Black)
+
+7. Fusing
+   * Two rollers - a heated roller coated in a nonstick material and a pressure roller melt the toner to the page
 
 # Troubleshooting Printers
 

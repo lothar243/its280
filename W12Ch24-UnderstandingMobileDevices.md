@@ -29,7 +29,7 @@
 
 ### Cameras
 
-* High dynamic range (HDR)
+* High dynamic range (HDR) - Keep the details in the dark shadows, even in a high contrast scene - very good for landscape photography
 * Many phones now have dedicated cameras for different circumstances
   * Facing the user
   * Zoom/macro
@@ -45,6 +45,7 @@
 The 'touch' part of the touchscreen
 
 * Transforms analog signals into digital ones
+* Technically even digital cameras are examples of digitizers, but the A+ has this grouped with touchscreens
 
 ### Global Positioning System
 

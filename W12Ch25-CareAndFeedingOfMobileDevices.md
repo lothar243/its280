@@ -84,15 +84,19 @@ IT has much less control over their network
 
 ### Malware
 
-iOS - Doesn't allow sideloading and is much more strict about their store
+iOS - They have a reputation for less malware
 
-* They may be required to allow third-party stores soon
+* Don't allow sideloading and is much more strict about their store
+  * They may be required to allow third-party stores soon - the EU says Apple has an effective monopoly
+
+* Smaller market share
 
 Android - Be careful what you download
 
 * Anti-malware isn't very good at spotting original malware
-* Permissions required for functionality
+* Permissions required for functionality - verify what is necessary, and be prepared to say 'no'
 * Malware can be introduced after the initial download (during an update)
+* Many devices are no longer supported, and thus don't receive security updates
 
 Symptoms/Clues
 

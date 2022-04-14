@@ -68,8 +68,9 @@ NTFS permissions types
   * Full control
   * Modify - read, write, and delete the file
   * Read & Execute
+  * List folder contents
   * Read
-  * Write - open and write to file
+  * Write - open and write to file (automatically set when "Modify" right is checked)
 * Inheritance 
   * new folders permissions are inherited from their parent folder
   * Enabled by default
@@ -81,6 +82,27 @@ NTFS permissions types
       * The permissions are unchanged
   * Between two NTFS-based volumes
     * permissions are inherited from the new location (for both copying and moving)
+* Deny - 'deny' privileges will override 'allow' if someone has both
+
+You can use 'icacls' to check file/folder permissions
+
+![icacls](images/icacls.png)
+
+Let's explain what those letters in parentheses mean as right now you might be confused.
+
+* I - permission inherited from the parent container
+* F - full access (full control)
+* M - Modify right/access
+* OI - object inherit
+* IO - inherit only
+* CI - container inherit
+* RX - read and execute
+* AD - append data (add subdirectories)
+* WD - write data and add files
+
+You can also use icacls to set ownership or set, remove, or deny permissions
+
+![icacls](images/icacls.png)
 
 ## Accounting
 
@@ -101,7 +123,7 @@ drwxrwxr-x 2 mikemeyers    mi6   4096 Oct   2  18:35 agent_bios
 The first character tells you what type of file
 
 * d - directory
-* \- normal file
+* \- - normal file
 * l - link
 
 The next 9 characters come in groups of 3

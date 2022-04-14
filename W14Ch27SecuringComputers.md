@@ -1,348 +1,210 @@
-Malware
+# Protecting Your Data
 
-# Security - Ch 27
+## Non-skilled attacks
 
-Comporate and ISP email configuration - CH24 p931
+Dumpster diving
 
-## Ch 27
+Shoulder surfing
 
-# Network security (ch 27)
+## Social Engineering
 
-firewall
+Often, the most insecure face of a company is its people
 
-DMZ
+* Impersonation - gain entrance by use a disguise
 
-Port forwarding
+* Tailgating - following someone else in
 
-NAT
+  Securing against tailgating:
 
-UPnP
+  * Mantrap - small room with two doors. Outer door must be closed before inner will open (like an airlock)
 
-Allowlist/blocklist (whitelist/blacklist)
+  * Security Guard
+  * Entry control roster
 
-MAC filtering
+* Telephone scams
 
-UTM
+* Phishing - trying to get usernames/password via email, usually low effort
+  * Spear phishing - more targeted (Like the frequent "Are you available?" emails posing as Tom Gallagher or Seth Bodnar)
 
-IDS
+## Denial of Service (DoS)
 
-IPS
+* Causing a service to become available
 
-syslog (ch 16)
+* Distributed Denial of Service (DDoS) - Many devices simultaneously attacking a single system
 
-VPN - Ch21 and Ch 24
+* Destruction of Data
 
+* System Crash/Hardware Failure
+* Physical Theft
+* Malware
 
+## Environmental Threats
 
-# Windows Seurity
+* Power loss
+* Dirty Air
+* Temperature and Humidity
 
-local security policy
+# Security Concepts and Technologies
 
-Firewall
+## Access Control 
 
-Advanced security
+### Secure Physical Area
 
-Event Viewer
+* Require ID Badges, with RFID tags or smart cards (RFID is easily cloned)
+* Locked doors, gates, fences
+* Cable Locks
+* USB Locks to prevent plugging in unauthorized USB devices (Like the USB Rubber Ducky)
+* RJ-45 locks or similar access control
+* Server locks to limit access to ports, or locking rack doors
 
-# Vulnerabilities
+* MAC address Filtering - can be overcome, but adds a barrier
 
-Legacy/embedded systems
+### Authentication
 
-# Physical security measures
+* Proper passwords
+* Multifactor authentication - require something from two different categories
+  * Something you have: smart card, hardware token, software token
+  * Something you are: fingerprint, iris scan, facial scan
+  * Something you know: PIN, password, passphrase
 
-Mantrap
+* Principle of least privilege - Accounts should have permissions only to resources they need and no more
+* Beware of default user accounts and groups
 
-Badge reader
+### Security Policies
 
-smart card
+* Group policies Management - Activities that are allowed
+  * Prevent Registry Edits
+  * Prevent Access to the Command Prompt
+  * Log On Locally
+  * Many others
 
-security guard
 
-door lock
+* Organizational Units (OUs) are used like folders to help organize users and devices, and apply group policies
 
-biometric locks
+### Data Classification
 
-hardware tokens
+* Personally Identifiable Information (PII)
+* Protected Health Information (PHI)
 
-cable locks
+### Compliance Groups
 
-server locks
+* Payment Card Industry (PCI)
+* General Data Protection Regulation (GDPR)
+* California Consumer Privacy Act (CCPA) (not in the A+)
 
-usb locks
+## Incident Response
 
-privacy screen
+### First Response
 
-key fobs
+* Secure area
+* Determine scope
+* Explore seriousness and impact on the company
 
-entry control roster
+### Identify and Report
 
-# Logical security measures
+* Have Auditing Enabled - create an entry in the Security Log when certain events happen
+* Use Event Viewer to read through logs (Logs are stored in %SystemRoot%\System32\Config)
 
-Software tokens
+### Incident Reporting
 
-MDM policies
+* Provide record of work
+* Provide information that might help to reveal bigger patterns
 
-* Require screen lock
-* Remote wipe
-* Locater application
-* Remote backup applications
-* Failed login attempts restritions
-* BYOD vs corporate owned
+### Evidence Handling and Chain of Custody
 
-Port security
+* Ignore personal information around a person's computer
+* Your company should have an Acceptable Use Policy (AUP) that defines what actions an employee may or may not perform with company resources
+* Report through proper channels - perhaps your incident response leader
+* Secure the chain of custody - a list of who has had possession of the evidence
+  * Isolate the system - shut it down and store it in a place where no one else has access
+  * Document when you took control and the actions you took (like shutting it down)
+  * Document the transfer of custody
 
-MAC address filtering
+# Malware
 
-Certificates
+Types of Malware
 
-VPN
+* Virus - software that replicates and activates
+* Worm - automatically spreads across a network - no user interaction is required usually
+* Trojan - malware that appears to be one thing but does something else
+* Keylogger - Keeps a log of keys pressed
+* Rootkit - A virus that gains low-level access to a system, accessing the kernel memory - very difficult to extinguish
+* Spyware - usually installed without your knowledge
+* Ransomware - encrypt valuable files, usually asking for bitcoin to get the decryption key
+* Botnet - The program will perform attacks on behalf of someone that controls it, among many other infected devices
+  * Often insecure routers or IOT devices
+  * The attacks can be DDoS, spam, or just acting as a node to hide traffic
 
-DLP
 
-Directory permissions
+Attack Vector - The route the malware takes to infect the system
 
-smart card
+Types of attacks
 
-email filtering
+* On path attack (Formerly Man-in-the-Middle) - The attacker intercepts communication and has the ability to alter it before forwarding it to the destination
+* Session Highjacking - Getting ahold of a valid cookie and putting it forward as your own (possibly through XSS)
+* Drive-by Downloads - downloading a file without user intervention
+* Popups - unwanted popups that can cause the user to click on something they didn't want to click
+  * Claim to be a popup from your operating system warning that your system is infected, and you "need to download and run this software"
+* Spam/Phishing - Email that attempts to get you to download something or steal your credentials
 
-trusted/untrusted software sources
+Zero-Day Vulnerabilities - vulnerabilities with no fixes, depending on who you ask, this definition may require "in the wild" exploitation
 
-principle of least privilege
+Password Guessing
 
-# Authentication
+* Brute force - trying all possible values
+* Dictionary attack - using a list of common passwords
+  * /usr/share/wordlists/rockyou.txt on Kali (you have to unzip it first)
+* Rainbow tables - A list of pre-hashed passwords to save time. Most passwords are salted to prevent this
 
-single-factor
+### Dealing with malware
 
-multifactor
+* Anti-malware programs such as an antivirus
 
-RADIUS
+  * Virus signatures are usually either pattern recognition or behavior recognition
 
-TACACS
+  * Polymorphic viruses alter themselves to avoid detection - often choosing random install locations, or using random strings in the program
+  * This will catch most garden variety viruses - Windows defender is enough for most people's purposes in my opinion. Running multiple antivirus programs can cause performance problems
 
-# Threats
+* Verify good downloads
 
-Ransomware
+  * Checksum (for example, a hash) - A value generated by an algorithm that will be drastically different if any bit is changed in the file
 
-* trojan
+* Removal of viruses can be difficult
 
-* Keylogger
+  * Many different forms of persistence - autorun locations, hiding among other applications
+  * Viruses often come in multiple layers, even if you eliminate one part, the other part may still reinfect you
 
-* Rootkit
+  Best practices for removal (according to the A+ 1002 exam objectives)
 
-* Virus
+  1. Identify and research malware symptoms
+  2. Quarantine the infected systems
+  3. Disable System Restore (in Windows)
+  4. Remediate the infected systems
+     1. update the anti-malware software
+     2. Scan and use the removal techniques, possibly using safe mode or the preinstallation environment
+  5. Schedule scans and run updates
+  6. Enable system restore and create a restore point (in Windows)
+  7. Educate the end user
 
-* Botnet
+  Alternatively, restoring from a known good backup (which is the preferred method if possible)
 
-* Worm
+* Secure Boot to prevent boot sector viruses
+* Network firewalls, with stateful packet inspection (SPI)
+  * Port forwarding causes incoming port's traffic to be directed to a specific computer within your network
+  * A DMZ is a portion of the network that is exposed to the internet - typically dedicated web servers
 
-* Spyware
+# Internet Appliances
 
-Social Engineering
+* Intrusion detection system (IDS) - Send an alert when specific type of traffic is detected (like an attempt at logging in)
+* Intrusion prevention system (IPS) - Sits in the flow of network traffic and can stop unwanted traffic when detected
+* Unified threat management (UTM) - Bundle the traditional firewall, an IPS, VPN, maybe a load balancer and antivirus all into the same appliance
 
-* Phishing
-* Spear phishing
-* Impersonation
-* SHoulder surfing
-* Tailgating
-* Dumpster diving
+# Encryption
 
-DDoS
-
-DoS
-
-Zero-day
-
-Man-in-the-middle
-
-Brute force
-
-Dictionary
-
-Rainbow table
-
-Spoofing
-
-Non-compliant systems
-
-Zombie
-
-Security Troubleshooting - 1002-3.2, and 3.3
-
-
-
-
-
-Malware
-
-# Security - Ch 27
-
-Comporate and ISP email configuration - CH24 p931
-
-## Ch 27
-
-# Network security (ch 27)
-
-firewall
-
-DMZ
-
-Port forwarding
-
-NAT
-
-UPnP
-
-Allowlist/blocklist (whitelist/blacklist)
-
-MAC filtering
-
-UTM
-
-IDS
-
-IPS
-
-syslog (ch 16)
-
-VPN - Ch21 and Ch 24
-
-
-
-# Windows Seurity
-
-local security policy
-
-Firewall
-
-Advanced security
-
-Event Viewer
-
-# Vulnerabilities
-
-Legacy/embedded systems
-
-# Physical security measures
-
-Mantrap
-
-Badge reader
-
-smart card
-
-security guard
-
-door lock
-
-biometric locks
-
-hardware tokens
-
-cable locks
-
-server locks
-
-usb locks
-
-privacy screen
-
-key fobs
-
-entry control roster
-
-# Logical security measures
-
-Software tokens
-
-MDM policies
-
-* Require screen lock
-* Remote wipe
-* Locater application
-* Remote backup applications
-* Failed login attempts restritions
-* BYOD vs corporate owned
-
-Port security
-
-MAC address filtering
-
-Certificates
-
-VPN
-
-DLP
-
-Directory permissions
-
-smart card
-
-email filtering
-
-trusted/untrusted software sources
-
-principle of least privilege
-
-# Authentication
-
-single-factor
-
-multifactor
-
-RADIUS
-
-TACACS
-
-# Threats
-
-Ransomware
-
-* trojan
-
-* Keylogger
-
-* Rootkit
-
-* Virus
-
-* Botnet
-
-* Worm
-
-* Spyware
-
-Social Engineering
-
-* Phishing
-* Spear phishing
-* Impersonation
-* SHoulder surfing
-* Tailgating
-* Dumpster diving
-
-DDoS
-
-DoS
-
-Zero-day
-
-Man-in-the-middle
-
-Brute force
-
-Dictionary
-
-Rainbow table
-
-Spoofing
-
-Non-compliant systems
-
-Zombie
-
-Security Troubleshooting - 1002-3.2, and 3.3
-
-# Securing Computers
-
-## Unauthorized Access
-
+* IPsec - includes protocols for mutual authentication and negotiation of cryptographic keys
+* VPN - an encrypted tunnel for all communication, often to add a device to a remote network, or connect two networks
+* Secure Socket Layer (SSL) and Transport Layer Security (TLS) - The encryption method used for HTTPS
+* Digital certificates - a verification from a Certificate Authority (CA) that some is who they claim to be
+  * Trusted Root CAs - CAs that are built in to your browser
+  * Certificates can be revoked, but not all software recognizes revocation properly - http://revoked.grc.com
+  * Expired certificate: https://expired-rsa-dv.ssl.com/

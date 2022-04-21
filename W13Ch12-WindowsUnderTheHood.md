@@ -111,7 +111,7 @@ Can force quit in context menus (right click)
   * tasklist /fi "imagename eq iexplore.exe"    # applies a filter based on 'image' (filename)
 * taskkill
   * taskkill /pid 4684     # add the /f to force
-* end-process
+* stop-process
   * Powershell
   * Has an alias of kill
 

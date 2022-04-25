@@ -113,8 +113,9 @@ Right-click "My Computer" or "This PC" | Properties | Advanced system settings |
 * macOS
 * backups are called "local snapshots"
 
-### System Restore
+### System Protection / System Restore
 
 * Windows
 * Create restore points for the operating system
 * Can be used to restore previous configuration (only settings and programs are changed)
+* Volume Shadow Copy Service (VSS) allows recovery of old versions of files, provided a system restore point is created

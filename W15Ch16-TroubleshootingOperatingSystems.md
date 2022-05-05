@@ -1,5 +1,54 @@
 # Troubleshooting
 
+## Troubleshooting Methodology
+
+1. Identify the Problem
+
+   Specific steps here may include:
+
+   - Gathering information from log files and error messages
+   - Questioning users
+   - Identifying symptoms
+   - Determining recent changes
+   - Duplicating the problem
+   - Approaching multiple problems one at a time
+   - Narrowing the scope of the problem
+
+   Keep it simple (is it plugged in? Is it on? Did you restart?)
+
+2. Establish a Theory of Probable Cause
+
+   Specific steps here may include:
+
+   - Questioning the obvious
+   - Considering multiple approaches, including top-to-bottom or bottom-to-top for layered technologies (such as networks)
+
+3. Test the Theory to Determine the Cause
+
+   If you were incorrect, return the the previous steps
+
+4. Establish a Plan of Action and Implement the Solution
+
+   Consider the consequences first
+
+   - Some fixes require reboots or other more significant forms of downtime
+   - You may need to download software, patches, drivers or entire operating system files before proceeding
+   - Your change management procedures may require you to test modifications to a system’s configuration in a staging environment before implementing the fix in production
+   - You may need to document a series of complex steps, commands and scripts
+   - You may need to back up data that might be put at risk during the recovery
+   - You may need approval from other IT staff members before making changes
+
+   Once you've considered the consequences, implementing may include
+
+   - Run your scripts
+   - Update your systems or software
+   - Edit configuration files
+   - Change firewall settings
+
+5. Verify Full System Functionality and Implement Preventive Measures
+
+6. Document Findings
+
 ## Failure to boot
 
 ### Hardware configuration

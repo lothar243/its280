@@ -169,3 +169,5 @@ Bluetooth - your own Personal Area Network (PAN)
 * In the 2.4 GHz range
 
 Cellular
+
+![xkcd - Electromagnetic Spectrum](https://imgs.xkcd.com/comics/electromagnetic_spectrum.png)

@@ -114,6 +114,8 @@ Switches/Options often come in short and long varieties
   * ls -lah
 
 Elevate privileges - su/sudo
+ 
+![sudo make me a sandwich](https://imgs.xkcd.com/comics/sandwich.png)
 
 ### Windows
 

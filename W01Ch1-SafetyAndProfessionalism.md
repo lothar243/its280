@@ -1,3 +1,8 @@
+# IT career entry level
+
+It's never too early to start working on your resume
+nikki.marlowe@mso.umt.edu
+
 # Professionalism
 
 1. Be on Time - plan for the traffic or taking a wrong turn

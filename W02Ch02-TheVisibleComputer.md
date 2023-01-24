@@ -130,10 +130,11 @@ The file system has a global root, /
 * Administrative Tools
 * The command-line
 
-### Windows 10
+### Windows 10 & 11
 
 * The control panel
 * Settings
+* Administrative tools (Renamed Windows Tools in Windows 11)
 * The command-line
 
 ### macOS
@@ -141,6 +142,7 @@ The file system has a global root, /
 * System preferences (Click on the Apple icon in the top-left and select system preferences)
   * Contains almost all settings you will need
 * Utilities Folder, located in the Applications folder
+* Mission Control (CTRL + Up) - switch between open applications
 
 ### Linux
 

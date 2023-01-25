@@ -22,7 +22,7 @@ The core of USB is the USB host controller, an integrated circuit normally built
 
 * Additional hubs can be added to give more devices
 
-### USB Standards
+### USB Speed Standards
 
 * USB 1.1
   * Low-speed USB, max speed of 1.5 Mbps
@@ -30,11 +30,13 @@ The core of USB is the USB host controller, an integrated circuit normally built
 * USB 2.0
   * Hi-speed USB running at 480 Mbps
 * USB 3.0
-  * Marketed as Superspeed USB, or USB 3.1 Gen 1
-  * Speeds up to 5 Gbps
-* USB 3.1
-  * Marketed as Superspeed USB 10 Gbps or USB 3.1 Gen 2
-  * Speeds up to 10 Gbps
+  * Marketed as Superspeed USB, speeds up to 5 Gbps
+* USB 3.1 and 3.2 do no indicate speed
+  * USB 5Gbps
+  * USB 10Gbps
+  * USB 20Gbps (3.2 only)
+  * USB 40Gbps (3.2 only)
+  * Terms like SuperSpeed Plus, Enhanced SuperSpeed, and SuperSpeed+ are "not intended to be used in... consumer-facing content"
 
 USB is fully backward compatible
 
@@ -45,7 +47,7 @@ The standard is usually indicated by the color of the connector, but not always
 * USB 3.0 Blue
 * USB 3.1 Teal
 
-### Cables and Connectors
+### USB Form factors (Cables and Connectors)
 
 https://usbcafe.com/what-is-the-difference-between-usb-type-a-and-usb-type-b/
 

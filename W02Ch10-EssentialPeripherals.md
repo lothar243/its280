@@ -66,12 +66,6 @@ USB type C
 * Can act as either upstream or downstream (the devices negotiate)
 * Plug can be reversed
 
-## Firewire
-
-* Also known as IEEE 1394
-* Has many of the same features as USB
-* Not in common use any more
-
 ## Thunderbolt
 
 * Taps directly into the PCI Express bus (security implications)

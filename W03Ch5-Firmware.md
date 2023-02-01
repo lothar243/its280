@@ -2,12 +2,6 @@
 
 Each keypress on a keyboard sends a series of pulses (1s and 0s) that are interpreted by the computer
 
-## System BIOS
-
-The basic input/output service (BIOS) is the support programming that enables the CPU to talk to devices
-
-Hundreds of these little services are collectively called the system BIOS
-
 ## ROM
 
 Read-only memory
@@ -17,6 +11,21 @@ Non-volatile memory that stores the system BIOS
 Usually flash ROM, so that it can be updated
 
 Typically, software stored on ROM is referred to as **firmware**
+
+## CMOS and RTC
+
+Complemantary metal-oxide semiconductor (CMOS) - a tiny bit of RAM powered by the internal battery that stores BIOS settings
+
+* Incorporated into the chipset
+* Many motherboards have a 'reset' feature that clears the CMOS
+
+Real-time clock (RTC) powered by the internal battery
+
+## System BIOS
+
+The basic input/output service (BIOS) is the support programming that enables the CPU to talk to devices
+
+Hundreds of these little services are collectively called the system BIOS
 
 ## UEFI
 
@@ -29,15 +38,6 @@ Compared to a traditional system BIOS, there are several improvements
 * Handles boot-loading duties
 * Portable to other chip types
 * Enables 'Secure Boot'
-
-## CMOS and RTC
-
-Complemantary metal-oxide semiconductor (CMOS) - a tiny bit of RAM powered by the internal battery that stores BIOS settings
-
-* Incorporated into the chipset
-* Many motherboards have a 'reset' feature that clears the CMOS
-
-Real-time clock (RTC) powered by the internal battery
 
 ## System Setup
 

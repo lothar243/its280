@@ -64,14 +64,25 @@ Commands executed in a command-line interface are very sensitive to syntax
 Piping - Take the output of one command and give it to another command as input (works on Bash and Powershell)
 
 * ls /usr/bin | less
+ 
+Redirection - Take the output of one command and write it to a new file (or append to a file)
+ 
+ * ls > myfile # Write output to a new file
+ * ls >> myfile # Append output to existing file (or create new one if none exists)
+ * cat < myfile # Read file contents as standard input to the command
+ * grep .txt < myfile > filteredfiles # Both reading and writing
 
 Tab completion - both Windows and Linux, pressing tab will cause the shell to attempt to predict and complete the command
 
 Press the Up/down arrows to pull up previous commands, move cursor with left/right
 
-The current directory is represented by .		cp Downloads\myfile.txt .
+The current directory is represented by .
+ 
+ * cp Downloads\myfile.txt .
 
-The parent of your current directory is ..		cd ..
+The parent of your current directory is ..		
+ 
+ * cd ..
 
 ## Commands
 

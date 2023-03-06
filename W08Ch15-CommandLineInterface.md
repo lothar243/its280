@@ -5,6 +5,8 @@
 * Linux/Unix Terminal
   * Shell (sh)
   * Bourne-Again SHell (bash)
+  * fish
+  * zsh
 * Windows Command Prompt (cmd)
   * Successor of the DOS Prompt
 * Windows Powershell (powershell)

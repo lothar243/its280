@@ -49,6 +49,9 @@ Commands executed in a command-line interface are very sensitive to syntax
   * C:\Windows\System32\notepad.exe
   * C:\Users\Jeffrey.Arends\Desktop\testfile.txt
 * Typical user's directories are located at C:\Users\\<username>\\, represented by %
+  * %SYSTEMDRIVE% - C:\\
+  * %SystemRoot% - C:\\Windows\\
+  * %APPDATA% - C:\\Users\\{username}\\AppData\\Roaming
 * Windows system files in C:\Windows
 * On a 64-bit system
   * 64-bit program files are in C:\Program Files\

@@ -2,7 +2,8 @@
 
 ## Shells
 
-* Linux Terminal Emulator
+* Linux/Unix Terminal
+  * Shell (sh)
   * Bourne-Again SHell (bash)
 * Windows Command Prompt (cmd)
   * Successor of the DOS Prompt

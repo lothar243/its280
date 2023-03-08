@@ -51,6 +51,7 @@ Commands executed in a command-line interface are very sensitive to syntax
 * Typical user's directories are located at C:\Users\\<username>\\, represented by %
   * %SYSTEMDRIVE% - C:\\
   * %SystemRoot% - C:\\Windows\\
+  * %USERPROFILE% - C:\\Users\\{username}
   * %APPDATA% - C:\\Users\\{username}\\AppData\\Roaming
 * Windows system files in C:\Windows
 * On a 64-bit system

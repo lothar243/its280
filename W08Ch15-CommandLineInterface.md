@@ -322,8 +322,10 @@ Path Variable - When you try to run a program that isn't in your current directo
 
 You can use the %<Variable>% notation to tell Windows to use these variables
 
-* If you ever see %TEMP%, this may be replaced with C:\Users\Jeff\AppData\Local\Temp - this is defined by an environment variable
-* cd %APPDATA%
+- If you ever see %TEMP%, this may be replaced with C:\Users\Jeff\AppData\Local\Temp - this is defined by an environment variable
+- Navigate to %appdata% in Windows Explorer
+- cd %APPDATA% # in cmd.exe
+- cd $env:appdata # in powershell
 
 To view/edit
 

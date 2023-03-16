@@ -131,7 +131,7 @@ The two major frequencies used: 2.4Ghz and 5Ghz (not to be confused with cellula
 
 ![wifichannels](images/wifichannels.png)
 
-![radiofrequencies](images/radiofrequencies.webp)
+![radiofrequencies](images/radiofrequencies.jpg)
 
 
 

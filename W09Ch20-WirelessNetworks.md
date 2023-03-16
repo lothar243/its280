@@ -131,6 +131,8 @@ The two major frequencies used: 2.4Ghz and 5Ghz (not to be confused with cellula
 
 ![wifichannels](images/wifichannels.png)
 
+![radiofrequencies](images/radiofrequencies.webp)
+
 
 
 * WAPs should be arranged so that there isn't interference (multiple WAPs in range with overlapping channels) - https://www.extremenetworks.com/extreme-networks-blog/2-4-ghz-channel-planning/

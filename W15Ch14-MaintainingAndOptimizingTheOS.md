@@ -30,6 +30,7 @@ Right click drive > Properties
 * Disk Cleanup - Temporary Files
 * Disc Defrag/Optimize SSD
 * Error Checking - chkdsk
+* WinDirStat (3rd party, not on A+)
 
 ## Windows Registry
 

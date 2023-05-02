@@ -10,15 +10,19 @@
 * Windows 7&8 patches are divided into three types: Important, Recommended, and Optional
   * Many patches would be lumped into "Service packs"
 
-* Windows 10/11 - individual users can delay updates for up to 35 days, but can't hide or skip them
+* Windows 10 - individual users can delay updates for up to 35 days, but can't hide or skip them
   * Quality updates - standard patches, cumulative by default
   * Feature updates - whole new versions of Windows
     * https://docs.microsoft.com/en-us/windows/release-health/release-information
     * Start > Settings > System > About
     * Released twice per year
     * https://learn.microsoft.com/en-us/windows/release-health/release-information
-    * Examples names: 1903, 1909, 2004, 20H2, 21H1, 21H2, 22H1, 22H2
+    * Examples names: 1903, 1909, 2004, 20H2, 21H1, 21H2
 
+* Windows 11
+  * Monthly "B" release (aka patch Tuesday)
+  * Feature update - switching to once per year, supported for two years
+    * 21H2, 22H2, etc
 
 ### macOS and Linux
 
